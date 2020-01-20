@@ -4,11 +4,11 @@ CFLAGS = -Wall -c $(DEBUG)
 LFLAGS = -Wall $(DEBUG)
 
 
-runProg : tempTable.o
-	$(CC) $(LFLAGS) tempTable.o -o runProg
+runProg : overFlowExamples.o
+	$(CC) $(LFLAGS) overFlowExamples.o -o runProg
 
-tempTable.o : tempTable.c
-	$(CC) $(CFLAGS) tempTable.c
+overFlowExamples.o : overFlowExamples.c
+	$(CC) $(CFLAGS) overFlowExamples.c
 
 clean:
 	\rm *.o runProg
