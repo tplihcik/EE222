@@ -4,11 +4,11 @@ CFLAGS = -Wall -c $(DEBUG)
 LFLAGS = -Wall $(DEBUG)
 
 
-runProg : overFlowExamples.o
-	$(CC) $(LFLAGS) overFlowExamples.o -o runProg
+runProg : hw3-5.o
+	$(CC) $(LFLAGS) hw3-5.o -o runProg
 
-overFlowExamples.o : overFlowExamples.c
-	$(CC) $(CFLAGS) overFlowExamples.c
+hw3-5.o : hw3-5.c
+	$(CC) $(CFLAGS) hw3-5.c
 
 clean:
 	\rm *.o runProg
