@@ -4,11 +4,11 @@ CFLAGS = -Wall -c $(DEBUG)
 LFLAGS = -Wall $(DEBUG)
 
 
-runProg : hw3-5.o
-	$(CC) $(LFLAGS) hw3-5.o -o runProg
+runProg : EE222HW4Pt2.o
+	$(CC) $(LFLAGS) EE222HW4Pt2.o -o runProg
 
-hw3-5.o : hw3-5.c
-	$(CC) $(CFLAGS) hw3-5.c
+EE222HW4Pt2.o : EE222HW4Pt2.c
+	$(CC) $(CFLAGS) EE222HW4Pt2.c
 
 clean:
 	\rm *.o runProg
